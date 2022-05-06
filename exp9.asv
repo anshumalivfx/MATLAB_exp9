@@ -1,0 +1,15 @@
+%Defining message signal x(t)=mag*sin(2*pi*fm*t)
+mag=2; 
+fm=100; 
+tm=1/fm;
+n_cycles=4; 
+t_time=n_cycles*tm;
+t=0:0.001:t_time;
+x=mag*sin(2*pi*fm*t); 
+subplot(3,1,1); 
+plot(t,x);
+title('Message signal')
+xlabel('t (sec)');
+ylabel('x(t)');
+
+
